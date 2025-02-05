@@ -1,24 +1,30 @@
-const add = function() {
+const add = function(a, b) {
+  return a + b; 
+};
+
+const subtract = function(a, b) {
+  return a - b;
+};
+
+const sum = function(array) {
+  return array.reduce((total, current) => total + current, 0);
+};
+
+const multiply = function(array) {
+  return array.reduce((product, current) => product * current); 
+};
+
+const power = function(a, b) {
+  return Math.pow(a, b); 
 	
 };
 
-const subtract = function() {
-	
-};
-
-const sum = function() {
-	
-};
-
-const multiply = function() {
-
-};
-
-const power = function() {
-	
-};
-
-const factorial = function() {
+const factorial = function(n) {
+  let product = 1; 
+  for (let i = n; i > 0; i--) {
+    product *= i; 
+  }
+  return product; 
 	
 };
 
@@ -31,3 +37,11 @@ module.exports = {
   power,
   factorial
 };
+
+/**
+ * The reduce() method executes a reducer function for array element. 
+ *  It returns a single value: the function's accumulated result. 
+ *  Does not execute the function for empty array element. 
+ *  Does not change the original array. 
+ */
+ 
